@@ -21,11 +21,33 @@
 
     </div>
 
+    <!-- TOOLBAR -->
     <aside class="toolbar">
-        <div class="album-preview">
 
+        <!-- ALBUM -->
+        <div class="album-preview"><!-- row -->
+            
+            <div class="album-preview--song"> <!-- col -->
+                <div class="song__graphic">
+                    <img src="./img/sinister.jpeg" alt="">
+                </div>
+
+                <div class="song__info">
+                    <h2 class="song--title">Sinister</h2>
+                    <p class="song--subtitle">Brano nome</p>
+                </div>
+
+            </div>
+            
+            <div class="album-preview--button"><!-- col -->
+
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+
+            </div>
         </div>
-        
+
+        <!-- PLAYER -->
         <div class="player-wrapper">
             <div class="player--command">
         
@@ -49,7 +71,7 @@
                     </div>
 
                     <div class="status__bar--bar">
-                        
+
                     </div>
 
                     <div class="status__bar--time">
@@ -60,8 +82,18 @@
             </div>
         </div>
 
+        <!-- AUDIO CONTROL -->
         <div class="audio-control">
-            
+
+            <i class="fa-solid fa-list"></i>
+
+            <i class="fa-solid fa-display"></i>
+
+            <div class="audio-control__volume">
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume--bar"></div>
+            </div>
+
         </div>
     </aside>
 
