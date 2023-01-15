@@ -267,6 +267,10 @@ body > .toolbar{
 /* MAIN CONTENT */
 
     /* main header */
+    .main-content{
+        overflow-y: scroll;
+        height: 100%;
+    }
 
     .main--header{
         display: flex;
@@ -293,13 +297,17 @@ body > .toolbar{
     }
 
     /* CONTENT AUDIO */
+    .content--audio{
+        padding: 20px;
+    }
     
+    /* AUDIO EXPLORE */
     .audio__explore-row{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding:20px ;
+        padding-bottom: 20px;
         row-gap: 25px;
 
 
@@ -309,7 +317,7 @@ body > .toolbar{
         display: flex;
         flex-wrap: wrap;
         font-size: 0.7em;
-        padding: 0 15px 5px;
+        padding: 0 15px 5px 0;
         color: var(--gray);
     }
 
@@ -320,7 +328,63 @@ body > .toolbar{
         width: 50%;
     }
 
+    /* AUDIO HOME */
+    .audio__home--content{
+        
+    }
 
+    .audio__home{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .audio__home-title{
+        font-size: 25px;
+        padding: 0 0 10px;
+    }
+    .audio__home--subtitle{
+        color: var(--gray);
+        font-size: 15px;
+    }
+    .audio__home--name{
+        padding-bottom: 20px;
+    }
+
+    /* COLLECTION */
+
+    .collection{
+        display: flex;
+        flex-basis:calc(100% / 6);
+        gap: 15px;
+        flex-wrap: wrap;
+
+
+    }
+
+    .card__cover{
+        width: 130px;
+        padding-bottom: 15px;
+    }
+
+    .collection__song{
+        display: flex;
+        text-align: center;
+    }
+
+    .card__title{
+        font-weight: bold;
+    }
+
+    .card__artist{
+        color: var(--gray);
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+
+    .card__cover.circular img{
+        border-radius: 70px;
+    }
 
 
 
